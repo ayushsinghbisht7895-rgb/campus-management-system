@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Camera</title>
+
+    <link rel="stylesheet" href="camera.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+    <a href="student.html" class="back">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>Campus Camera</h2>
+
+    <i class="fa-solid fa-camera"></i>
+
+</header>
+
+<!-- Camera -->
+
+<div class="camera-card">
+
+    <video id="video" autoplay playsinline></video>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <img id="photoPreview">
+
+</div>
+
+<!-- Information -->
+
+<div class="info">
+
+    <div class="info-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <span id="location">Detecting Location...</span>
+    </div>
+
+    <div class="info-box">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span id="datetime"></span>
+    </div>
+
+</div>
+
+<!-- Camera Controls -->
+
+<div class="controls">
+
+    <button id="openCamera">
+        <i class="fa-solid fa-video"></i>
+        Open Camera
+    </button>
+
+    <button id="closeCamera">
+        <i class="fa-solid fa-video-slash"></i>
+        Off Camera
+    </button>
+
+    <button id="captureBtn">
+        <i class="fa-solid fa-camera"></i>
+        Capture Photo
+    </button>
+
+</div>
+
+<!-- Recording Controls -->
+
+<div class="controls">
+
+    <button id="startRecord">
+        <i class="fa-solid fa-circle"></i>
+        Start Recording
+    </button>
+
+    <button id="stopRecord" disabled>
+        <i class="fa-solid fa-stop"></i>
+        Stop Recording
+    </button>
+
+</div>
+
+<!-- Video Preview -->
+
+<div class="preview-card">
+
+    <h3>
+        <i class="fa-solid fa-film"></i>
+        Recorded Video
+    </h3>
+
+    <video id="recordedVideo" controls></video>
+
+</div>
+
+<!-- Photo Preview -->
+
+<div class="preview-card">
+
+    <h3>
+        <i class="fa-solid fa-image"></i>
+        Captured Photo
+    </h3>
+
+    <img id="capturedImage">
+
+</div>
+
+<!-- Actions -->
+
+<div class="actions">
+
+    <button id="retake">
+        <i class="fa-solid fa-rotate"></i>
+        Retake
+    </button>
+
+    <button id="downloadPhoto">
+        <i class="fa-solid fa-download"></i>
+        Download Photo
+    </button>
+
+    <button id="downloadVideo">
+        <i class="fa-solid fa-download"></i>
+        Download Video
+    </button>
+
+  
+    <button id="sendAdmin">
+    <i class="fa-solid fa-paper-plane"></i>
+    Send to Admin
+</button>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+    © 2026 Smart Campus Maintenance & Issue Reporting System
+</footer>
+
+<script src="camera.js"></script>
+
+</body>
+</html>

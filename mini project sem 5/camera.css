@@ -1,0 +1,260 @@
+/* ==========================
+   Smart Campus Camera
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+header h2{
+    font-size:22px;
+}
+
+.back{
+    color:#fff;
+    text-decoration:none;
+    font-size:22px;
+}
+
+/* Camera Card */
+
+.camera-card{
+    width:90%;
+    max-width:850px;
+    margin:25px auto;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    padding:20px;
+}
+
+#video{
+    width:100%;
+    border-radius:12px;
+    background:#000;
+}
+
+#canvas{
+    display:none;
+}
+
+#photoPreview{
+    display:none;
+    width:100%;
+    margin-top:15px;
+    border-radius:12px;
+}
+
+/* Info */
+
+.info{
+    width:90%;
+    max-width:850px;
+    margin:20px auto;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#fff;
+    margin-bottom:12px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.info-box i{
+    color:#2563eb;
+    font-size:20px;
+}
+
+/* Controls */
+
+.controls{
+    width:90%;
+    max-width:850px;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+/* Buttons */
+
+button{
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button i{
+    margin-right:8px;
+}
+
+/* Individual Button Colors */
+
+#openCamera{
+    background:#2563eb;
+}
+
+#openCamera:hover{
+    background:#1d4ed8;
+}
+
+#closeCamera{
+    background:#ef4444;
+}
+
+#closeCamera:hover{
+    background:#dc2626;
+}
+
+#captureBtn{
+    background:#16a34a;
+}
+
+#captureBtn:hover{
+    background:#15803d;
+}
+
+#startRecord{
+    background:#f97316;
+}
+
+#startRecord:hover{
+    background:#ea580c;
+}
+
+#stopRecord{
+    background:#dc2626;
+}
+
+#stopRecord:hover{
+    background:#b91c1c;
+}
+
+#retake{
+    background:#6b7280;
+}
+
+#retake:hover{
+    background:#4b5563;
+}
+
+#downloadPhoto{
+    background:#0ea5e9;
+}
+
+#downloadPhoto:hover{
+    background:#0284c7;
+}
+
+#downloadVideo{
+    background:#7c3aed;
+}
+
+#downloadVideo:hover{
+    background:#6d28d9;
+}
+
+#sendAdmin{
+    background:#10b981;
+}
+
+#sendAdmin:hover{
+    background:#059669;
+}
+
+/* Preview */
+
+.preview-card{
+    width:90%;
+    max-width:850px;
+    margin:25px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.preview-card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+#recordedVideo,
+#capturedImage{
+    width:100%;
+    border-radius:12px;
+}
+
+#capturedImage{
+    display:none;
+}
+
+/* Actions */
+
+.actions{
+    width:90%;
+    max-width:850px;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    padding:18px;
+    background:#2563eb;
+    color:#fff;
+    text-align:center;
+    font-size:15px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    header h2{
+        font-size:18px;
+    }
+
+    .controls,
+    .actions{
+        grid-template-columns:1fr;
+    }
+
+}
